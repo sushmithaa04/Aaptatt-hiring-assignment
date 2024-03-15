@@ -8,7 +8,7 @@ pipeline {
     stages {
         stage('Build GitHub repository') {
             steps {
-                git 'https://github.com/mkishornaik52/kishor-naik-Aaptatt-hiring-assignment.git'
+                git 'https://github.com/sushmithaa04/Aaptatt-hiring-assignment.git'
 
                 // Run Maven
                 sh "mvn -Dmaven.test.failure.ignore=true clean package"
