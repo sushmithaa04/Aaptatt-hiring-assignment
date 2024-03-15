@@ -1,0 +1,18 @@
+version: '3'
+
+services:
+  nginx:
+    build:
+      context: .
+      dockerfile: Dockerfile-nginx
+    image: sushmitahaa04/nginx:a1
+    ports:
+      - "80:80"
+
+  tomcat:
+    build:
+      context: .
+      dockerfile: Dockerfile-tomcat
+    image: sushmitahaa04/tomcat:a1
+    ports:
+      - "8080:8080"
