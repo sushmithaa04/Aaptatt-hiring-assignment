@@ -1,0 +1,17 @@
+apt-get update
+apt install maven -y
+mvn clean package
+docker-compose build
+docker-compose up -d
+docker-compose dowm
+docker login -u sushmithaa04 -p docker password
+docker-compose push
+cat /var/lib/jenkins/secrets/initialAdminPassword 
+sudo usermod -aG docker $USER
+sudo usermod -aG docker jenkins         / to docker run in jenkins on ec2/
+jenkins ALL=(ALL) NOPASSWD:ALL          /complete access to install anything on jenkins laaast on sudo visudo/
+sudo visudo        
+nano /lib/systemd/system/jenkins.service          // to change jenkins port//
+systemctl daemon-reload
+systemctl status jenkins.service
+http://localhost:8080/sparkjava-hello-world-1.0/aaptatt   // tomcat server =8080//
